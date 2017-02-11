@@ -212,7 +212,7 @@ server {
     listen       8000;  # 必须要起80以外的端口，避免和已有进程冲突
     server_name  www.carol.com;
         root /var/www/html/carol.com;
-        index index.html;
+        index index.html index.htm;
         }
 }
 
@@ -231,4 +231,5 @@ carol    28023 28022  0 01:36 ?        00:00:00 nginx: worker process
 carol    28024 28022  0 01:36 ?        00:00:00 nginx: worker process
 root     28026 27881  0 01:36 pts/1    00:00:00 grep --color=auto nginx
 ```
+
 
